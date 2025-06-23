@@ -1,0 +1,23 @@
+Bước 1:
+Điền cookie value (search 'CHECKLIST' trong Visual Studio Code cho nhanh)
+Q&A: Lấy cookie value ở đâu?
+- Trong màn hình chính AEM.
+- Mở F12 (hoặc Inspect element).
+- Chọn tab Application. Chọn value của JSESSIONID.
+
+Bước 2:
+Điền sitecode (search 'SITECODE' trong VS Code, chỗ này nằm gần chỗ cookie luôn)
+Q&A: Lúc nào cũng cần điền sitecode hả?
+Không đâu.
+Cần implement cho site nào thì điền sitecode nước đó.
+Nếu chỉ run để lấy metatags hoặc info thôi thì ko cần update sitecode đâu.
+
+Bước 3:
+Cần run chức năng nào thì uncomment(bỏ dấu #) của function đó (search 'main__' trong VS Code cho nhanh)
+
+Chú ý:
+- Tool "cùi bắp" này mỗi lần chỉ chạy 1 chức năng.
+- Muốn chạy nhiều chức năng thì phải đợi xong rồi mới chạy tiếp được.
+- Cứ mỗi 3-4 tiếng thì cần copy lại cookie value.
+- File token.json sẽ hết hạn sau 7 ngày (default). Nếu chạy bị lỗi session expired, chỉ cần xóa file token.json rồi chạy lại.
+Hệ thống sẽ tự tạo ra file token.json mới.
